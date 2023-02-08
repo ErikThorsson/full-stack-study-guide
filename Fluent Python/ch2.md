@@ -56,8 +56,7 @@ Parallel Assignment is most common
 * can swap in one line w/ unpacking
   * `b, a = a, b`
 * \* prefix
-  * Unpacking example:
-  ![](images/8.png)
+  * Unpacking example: ![](images/8.png)
   * can also grab excess items
   ![](images/9.png)
     * can appear in any position!
