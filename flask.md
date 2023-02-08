@@ -31,6 +31,7 @@ and teardown_appcontext() functions are executed. These execute even if an unhan
 
 https://flask.palletsprojects.com/en/2.2.x/reqcontext/
 
+# url_for
 `from flask import url_for`
 * ![](images/url_for.png)
 https://stackoverflow.com/questions/7478366/create-dynamic-urls-in-flask-with-url-for
