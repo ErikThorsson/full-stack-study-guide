@@ -89,7 +89,7 @@ New in 3.10, match/case statement
   
 # Slicing
 `s[a:b:c]` step c can skip items, or reverse w/ -1
-![](images/16.png)
+* ![](images/16.png)
 
 Alternate syntax `foo = slice(0,2)`
 
