@@ -88,7 +88,7 @@ New in 3.10, match/case statement
       * `*extra` binds them to a list
   
 # Slicing
-s[a:b:c] step c can skip items, or reverse w/ -1
+`s[a:b:c]` step c can skip items, or reverse w/ -1
 ![](images/16.png)
 
 Alternate syntax `foo = slice(0,2)`
