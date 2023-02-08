@@ -21,7 +21,8 @@ Two types: Attribute and Structural
     - more: https://angular.io/guide/structural-directives
 
 
-**Components** A component, rather than adding/modifying behaviour, actually 
+# Components 
+A component, rather than adding/modifying behaviour, actually 
 creates its own view (hierarchy of DOM elements) with attached behaviour. 
 An example use case for this might be a contact card component:
 ![](images/4.png)
