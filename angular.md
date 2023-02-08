@@ -9,14 +9,14 @@ Two types: Attribute and Structural
 - **Attribute**
     - Change the appearance or behavior of DOM elements and Angular components with attribute directives.
     - ```ng generate directive highlight```
-    - ![](images/Screen Shot 2023-01-18 at 10.51.28 AM.png)
+    - ![](images/5.png)
     - ```<p appHighlight>Highlight me!</p>```
 
 - **Structural**
     - Angular provides a set of built-in structural directives (such as NgIf, NgForOf, NgSwitch and others) which are commonly used in all Angular projects.
     - ```ng generate directive unless```
-    - ![](images/Screen Shot 2023-01-18 at 10.52.58 AM.png)
-    - ![](images/Screen Shot 2023-01-18 at 10.54.12 AM.png)
+    - ![](images/6.png)
+    - ![](images/7.png)
     - Angular's <ng-template> element defines a template that is not rendered by default.
     - more: https://angular.io/guide/structural-directives
 
@@ -24,7 +24,7 @@ Two types: Attribute and Structural
 **Components** A component, rather than adding/modifying behaviour, actually 
 creates its own view (hierarchy of DOM elements) with attached behaviour. 
 An example use case for this might be a contact card component:
-![](images/Screen Shot 2023-01-18 at 10.37.39 AM.png)
+![](images/4.png)
 
 # Data Binding 
 - Interpolation
@@ -36,9 +36,9 @@ An example use case for this might be a contact card component:
     - ```<!-- Bind button disabled state to `isUnchanged` property -->
     <button type="button" [disabled]="isUnchanged">Save</button>```
     - NOTE: can also bind to attributes. Attribute binding is mainly useful where we don’t have any property view with respect to an HTML element attribute.
-    - ![](images/Screen Shot 2023-01-18 at 11.42.29 AM.png)
+    - ![](images/8.png)
   - Types of Data Binding
-    - ![](images/Screen Shot 2023-01-18 at 11.44.54 AM.png)
+    - ![](images/9.png)
     - The binding punctuation of [], (), [()], and the prefix specify the direction of data flow.
       - Use [] to bind from source to view 
       - Use () to bind from view to source 

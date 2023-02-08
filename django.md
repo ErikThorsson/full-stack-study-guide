@@ -25,7 +25,7 @@ mysite/
 - `python manage.py runserver`
 
 # Creating a View
-![](images/Screen Shot 2023-01-18 at 1.45.45 PM.png)
+![](images/1.png)
 
 In `urls.py`write something like this:
 ```
@@ -82,7 +82,7 @@ urlpatterns = [
 **Class Based Views**
 - Here we can attach models to a view endpoint and have different behaviors depending
  on the request type (GET , HEAD, wtc)
-![](images/Screen Shot 2023-01-18 at 2.25.47 PM.png)
+![](images/2.png)
 - ```
     urlpatterns = [
     path('books/', BookListView.as_view()),
@@ -90,7 +90,7 @@ urlpatterns = [
     ```
 - ListView is a base class for a page representing a list of objects.
 - We can also make asyc views
-![](images/Screen Shot 2023-01-18 at 2.28.31 PM.png)
+![](images/3.png)
 - https://docs.djangoproject.com/en/4.1/topics/class-based-views/
 
 # DB and migrations

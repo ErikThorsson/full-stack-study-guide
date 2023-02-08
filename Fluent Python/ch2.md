@@ -6,7 +6,7 @@
 * hold items of one simple type
   * e.g. str, bytes, array.array
 * stores the value of its contents in its own memory space
-![](images/test.png)
+![](images/1.png)
 
 Every Python object in memory has a header with metadata. 
 * float example.
@@ -26,18 +26,18 @@ Every Python object in memory has a header with metadata.
   * otherwise vars are just locally scoped
 
 * Cartesian Product
-  * ![](images/Screen Shot 2023-02-06 at 10.26.53 AM.png)
+  * ![](images/2.png)
 
 # Generator Expressions (genexp):
 * saves memory because it yields items one by one by using he iterator protocol instead of building a whole list just to feed another constructor
 * same syntax as listcomps but `()` instead of `[]`
-* ![](images/Screen Shot 2023-02-06 at 10.30.36 AM.png)
+* ![](images/3.png)
 
 # Tuples
 Not only immutable lists! Can also be used as records with no field names.
 * e.g. with tuple unpacking:
   * `city, year, pop, chg, area = ('Tokyo', 2003, 32_450, 0.66, 8014)`
-* ![](images/Screen Shot 2023-02-06 at 10.56.53 AM.png)
+* ![](images/3.png)
 * Optimization:
   * Use less memory than a list and allows Python to do some optimizations.
     * object values of references within a tuple can be changed, however. Only references are static.
@@ -52,34 +52,34 @@ Not only immutable lists! Can also be used as records with no field names.
 
 # Iterable Unpacking
 Parallel Assignment is most common
-* ![](images/Screen Shot 2023-02-06 at 11.17.37 AM.png)
+* ![](images/4.png)
 * can swap in one line w/ unpacking
   * `b, a = a, b`
 * \* prefix
-  * Unpacking example:![](images/Screen Shot 2023-02-06 at 11.19.15 AM.png)
+  * Unpacking example:![](images/8.png)
   * can also grab excess items
-    ![](images/Screen Shot 2023-02-06 at 11.20.40 AM.png)
+    ![](images/9.png)
     * can appear in any position!
-    ![](images/Screen Shot 2023-02-06 at 11.21.30 AM.png)
+    ![](images/10.png)
   * useful for defining sequences:
-  ![](images/Screen Shot 2023-02-06 at 11.25.17 AM.png)
+  ![](images/11.png)
 
 Nested Unpacking
 * (a, b, (c, d))
-![](images/Screen Shot 2023-02-06 at 11.28.22 AM.png)
+![](images/12.png)
 
 # Pattern Matching with Sequences
 New in 3.10, match/case statement
   * works with list, tuple. array.array, range, memoryview, collections.deque
   * Can handle commands like `['BEEPER', 440, 3]`
-![](images/Screen Shot 2023-02-06 at 11.31.28 AM.png)
+![](images/13.png)
   * Similar to switch/case but improved:
     * destructuring - a more advanced form of unpacking (in Scala too)
-    ![](images/Screen Shot 2023-02-06 at 11.34.41 AM.png)
+    ![](images/14.png)
     * str, bytes, bytearray are NOT handled as sequences with match/case
       * treated as atomic value
         * have to convert like this:
-        ![](images/Screen Shot 2023-02-06 at 11.37.55 AM.png)
+        ![](images/15.png)
     * _ symbol never bound to value and can appear more than once
     * can even pattern match for type
       * `case [str(name), _, _, (float(lat), float(lon))]:`
@@ -89,7 +89,7 @@ New in 3.10, match/case statement
   
 # Slicing
 s[a:b:c] step c can skip items, or reverse w/ -1
-![](images/Screen Shot 2023-02-06 at 12.14.50 PM.png)
+![](images/16.png)
 
 Alternate syntax `foo = slice(0,2)`
 
@@ -105,7 +105,7 @@ We can modify arrays with:
 # + * operators with sequences
 \* operator
 * `['_'] * 3 = ['_', '_', '_']`
-  * e.g. ![](images/Screen Shot 2023-02-06 at 12.24.51 PM.png)
+  * e.g. ![](images/17.png)
 
 \+ op
 * appends lists
@@ -164,7 +164,7 @@ Shared-memory sequence type that lets you handle slices of arrays without copyin
 * (things like PIL images, SQLite databases, NumPy arrays, etc.) without first
 * copying. This is very important for large data sets."
 * "Example 2-20. Handling 6 bytes of memory as 1×6, 2×3, and 3×2 views"
-  * ![](images/Screen Shot 2023-02-08 at 11.25.26 AM.png)
+  * ![](images/18.png)
 
 # NumPy and Deques!
 To Be continued!
