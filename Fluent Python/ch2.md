@@ -6,7 +6,7 @@
 * hold items of one simple type
   * e.g. str, bytes, array.array
 * stores the value of its contents in its own memory space
-![](images/1.png)
+*![](images/1.png)
 
 Every Python object in memory has a header with metadata. 
 * float example.
@@ -52,17 +52,18 @@ Not only immutable lists! Can also be used as records with no field names.
 
 # Iterable Unpacking
 Parallel Assignment is most common
-![](images/4.png)
+* ![](images/4.png)
 * can swap in one line w/ unpacking
   * `b, a = a, b`
 * \* prefix
-  * Unpacking example: ![](images/8.png)
+  * Unpacking example: 
+  * ![](images/8.png)
   * can also grab excess items
-  ![](images/9.png)
+  * ![](images/9.png)
     * can appear in any position!
-  ![](images/10.png)
+  * ![](images/10.png)
   * useful for defining sequences:
-  ![](images/11.png)
+  * ![](images/11.png)
 
 Nested Unpacking
 * (a, b, (c, d))
@@ -72,14 +73,14 @@ Nested Unpacking
 New in 3.10, match/case statement
   * works with list, tuple. array.array, range, memoryview, collections.deque
   * Can handle commands like `['BEEPER', 440, 3]`
-![](images/13.png)
+  * ![](images/13.png)
   * Similar to switch/case but improved:
     * destructuring - a more advanced form of unpacking (in Scala too)
-    ![](images/14.png)
+    * ![](images/14.png)
     * str, bytes, bytearray are NOT handled as sequences with match/case
       * treated as atomic value
         * have to convert like this:
-        ![](images/15.png)
+        * ![](images/15.png)
     * _ symbol never bound to value and can appear more than once
     * can even pattern match for type
       * `case [str(name), _, _, (float(lat), float(lon))]:`
