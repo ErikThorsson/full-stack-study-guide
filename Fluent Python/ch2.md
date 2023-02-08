@@ -52,21 +52,22 @@ Not only immutable lists! Can also be used as records with no field names.
 
 # Iterable Unpacking
 Parallel Assignment is most common
-* ![](images/4.png)
+![](images/4.png)
 * can swap in one line w/ unpacking
   * `b, a = a, b`
 * \* prefix
-  * Unpacking example:![](images/8.png)
+  * Unpacking example:
+  ![](images/8.png)
   * can also grab excess items
-    ![](images/9.png)
+  ![](images/9.png)
     * can appear in any position!
-    ![](images/10.png)
+  ![](images/10.png)
   * useful for defining sequences:
   ![](images/11.png)
 
 Nested Unpacking
 * (a, b, (c, d))
-![](images/12.png)
+* ![](images/12.png)
 
 # Pattern Matching with Sequences
 New in 3.10, match/case statement
