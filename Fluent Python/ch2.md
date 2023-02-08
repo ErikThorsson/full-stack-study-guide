@@ -6,7 +6,7 @@
 * hold items of one simple type
   * e.g. str, bytes, array.array
 * stores the value of its contents in its own memory space
-*![](images/1.png)
+* ![](images/1.png)
 
 Every Python object in memory has a header with metadata. 
 * float example.
