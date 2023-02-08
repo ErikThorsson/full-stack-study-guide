@@ -28,8 +28,8 @@ Every Python object in memory has a header with metadata.
 * Cartesian Product
   * ![](images/2.png)
 
-# Generator Expressions (genexp):
-* saves memory because it yields items one by one by using he iterator protocol instead of building a whole list just to feed another constructor
+# Generator Expressions (genexps):
+* saves memory because it yields items one by one by using the iterator protocol instead of building a whole list just to feed another constructor
 * same syntax as listcomps but `()` instead of `[]`
 * ![](images/3.png)
 
@@ -101,14 +101,14 @@ We can modify arrays with:
     l = [0,1,2] 
     l[0:3] = [100]
     l = [100]
-    ```®
+    ```
   
 # + * operators with sequences
 \* operator
 * `['_'] * 3 = ['_', '_', '_']`
   * e.g. ![](images/17.png)
 
-\+ op
+\+ operator
 * appends lists
 ```
     >>>lst1=[12, 34, 56]
